@@ -12,9 +12,6 @@ public class searchEle {
                 System.out.println("element found at index "+i);
             }
         }
-
-        
-
         sc.close();
     }
 }
