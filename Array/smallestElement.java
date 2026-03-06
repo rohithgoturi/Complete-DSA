@@ -1,3 +1,4 @@
+package Array;
 public class smallestElement {
     public static void main(String[] args) {
         int[] arr = {100, 60, 50, 80, 30, 90};
