@@ -1,4 +1,4 @@
-package Array;
+
 public class negativeEle {
     public static void main(String[] args) {
         int[] arr = {12, -5, 0, 8, -22, -1, 45, -9};
