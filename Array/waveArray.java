@@ -13,5 +13,6 @@ public class waveArray {
             System.out.print(ele+ " ");
         }
         
+        
     }
 }
