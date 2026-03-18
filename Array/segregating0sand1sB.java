@@ -13,6 +13,6 @@ public class segregating0sand1sB {
         for (int i = 0; i < countZeros; i++) arr[i] = 0;
         for (int i = countZeros; i < arr.length; i++) arr[i] = 1;
             
-        for(int ele : arr) System.err.print(ele+ " ");
+        for(int ele : arr) System.out.print(ele+ " ");
     }
 }
