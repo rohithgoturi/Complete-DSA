@@ -7,7 +7,7 @@ public class segregating0sand1sB {
 
         for (int i = 0; i < arr.length; i++) {
             if(arr[i]==0) countZeros++;
-            else countOnes++;
+            
         }
 
         for (int i = 0; i < countZeros; i++) arr[i] = 0;
