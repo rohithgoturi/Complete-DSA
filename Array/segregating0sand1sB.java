@@ -3,7 +3,6 @@ public class segregating0sand1sB {
         int[] arr = {0, 0, 1, 1, 0};
 
         int countZeros = 0;
-        
 
         for (int i = 0; i < arr.length; i++) {
             if(arr[i]==0) countZeros++;
