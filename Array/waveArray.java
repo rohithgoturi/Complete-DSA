@@ -7,6 +7,7 @@ public class waveArray {
             int temp = arr[i];
             arr[i] = arr[i+1];
             arr[i+1] = temp;
+            
         }
         for (int ele : arr) {
             System.out.print(ele+ " ");
