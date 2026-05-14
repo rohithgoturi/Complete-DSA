@@ -1,5 +1,5 @@
 public class waveArray {
-    // we are given a sorted array and we have to convert into wavy array i. e arr[0]>= arr [1] <= arr [2].. 
+     
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
 
