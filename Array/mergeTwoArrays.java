@@ -5,7 +5,7 @@ public class mergeTwoArrays {
 
         int[] c = new int[a.length+b.length];
 
-        mergeArrays(a, b, c);
+        mergeArrays(a, b, c); 
         for (int i : c) {
             System.out.print(i+" ");
         }
