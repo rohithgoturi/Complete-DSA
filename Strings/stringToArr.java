@@ -1,0 +1,6 @@
+public class stringToArr {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        char[] charArray = str.toCharArray();
+    }
+}
