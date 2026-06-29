@@ -8,6 +8,6 @@ public class increasingDecreasing {
         if(n==0) return;
         System.out.print(n + " ");
         printIncDec(n-1);
-        System.out.print(n + " ");
+        if(n!=1) System.out.print(n + " ");
     }
 }
