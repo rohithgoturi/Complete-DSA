@@ -7,15 +7,9 @@ public class gcd {
     }
 
     public static int gcd(int a, int b) {
-        int n;
-        if (a < b) n = a;
-        else n = b;
-        int divisor = 0;
-        
-        for(int i=1; i<=n; i++){
-            if(a%i==0 && b%i==0) divisor = i;
+        if (b == 0) {
+            return a;
         }
-
-        return divisor;
+        return gcd(b, a % b);
     }
 }
