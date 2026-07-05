@@ -1,22 +1,18 @@
 public class kthFromEnd {
     public static int getKthNode(Node head, int k){
-        Node temp = head;
-        int length = 0;
+        Node fast = head;
+        Node slow = head;
 
-        while(temp != null){
-            temp = temp.next;
-            length++;
+        for(int i=1; i <= k; i++){
+            fast = fast.next;
         }
 
-        int kth = length - k + 1;
-        temp = head;
-
-        while(kth > 1){
-            temp = temp.next;
-            kth--;
+        while(fast != null){
+            fast = fast.next;
+            slow = slow.next;
         }
 
-        return temp.data;
+        return slow.data;
     }
 
     public static void main(String args[]){
