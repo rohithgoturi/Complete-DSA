@@ -1,6 +1,5 @@
 public class isEven {
-    public static boolean isEven(Node head) {
-        // code here
+    public static boolean checkEven(Node head) {
         int count = 0;
         Node temp = head;
         
@@ -26,6 +25,6 @@ public class isEven {
         c.next = d;
         d.next = e;
 
-        System.out.println(isEven(a));
+        System.out.println(checkEven(a));
     }
 }
