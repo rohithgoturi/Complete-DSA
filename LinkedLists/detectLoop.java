@@ -1,6 +1,5 @@
 public class detectLoop {
-    public static boolean detectLoop(Node head) {
-        // code here
+    public static boolean detectLoops(Node head) {  
         Node slow = head;
         Node fast = head;
         
@@ -28,7 +27,7 @@ public class detectLoop {
 
         e.next = c; 
 
-        boolean hasLoop = detectLoop(a);
+        boolean hasLoop = detectLoops(a);
         System.out.println(hasLoop);
     }
 }
