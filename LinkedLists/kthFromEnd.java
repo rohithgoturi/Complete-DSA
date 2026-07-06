@@ -8,7 +8,6 @@ public class kthFromEnd {
         }
 
         while(fast != null){
-            if(fast == null) return -1;
             fast = fast.next;
             slow = slow.next;
         }
