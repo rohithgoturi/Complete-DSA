@@ -1,32 +1,31 @@
 public class partitionLinkedList {
      public static Node partition(Node head, int x) {
-        Node lessD = new Node(-1), equalD = new Node(-1), greaterD = new Node(-1);
-        Node less = lessD, equal = equalD, greater = greaterD;
+        Node d1 = new Node(-1);
+        Node d2 = new Node(-1);
 
-        Node curr = head;
+        Node t1 = d1;
+        Node t2 = d2;
 
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = null;
+        Node t = head;
 
-            if (curr.data < x) {
-                less.next = curr;
-                less = curr;
-            } else if (curr.data == x) {
-                equal.next = curr;
-                equal = curr;
-            } else {
-                greater.next = curr;
-                greater = curr;
+        while(t != null){
+            if(t.data < x){
+                t1.next = t;
+                t1 = t1.next;
             }
 
-            curr = next;
+            else {
+                t2.next = t;
+                t2 = t2.next;
+            }
+
+            t = t.next;
         }
 
-        equal.next = greaterD.next;
-        less.next = equalD.next;
+        t1.next = d2.next;
+        t2.next = null;
 
-        return lessD.next;
+        return d1.next;
     }
 
     public static void main(String[] args) {
