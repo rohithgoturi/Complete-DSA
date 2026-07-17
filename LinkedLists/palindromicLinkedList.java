@@ -12,8 +12,8 @@ public class palindromicLinkedList {
             fast = fast.next.next;
         }
 
-        Node second = reverse(slow.next);
-
+        Node head2 = slow.next;
+        Node second = reverse(head2);
         Node first = head;
 
         while (second != null) {
