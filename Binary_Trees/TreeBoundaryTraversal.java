@@ -35,8 +35,8 @@ public class TreeBoundaryTraversal {
         if(root == null) return;
         if(root.left == null && root.right == null) return;
         
-        if(root.left != null) rightBoundary(root.left, ans);
-        else if(root.right != null) rightBoundary(root.right, ans);
+        if(root.right != null) rightBoundary(root.right, ans);
+        else if(root.left != null) rightBoundary(root.left, ans);
         ans.add(root.data);
     }
 
