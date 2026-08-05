@@ -14,6 +14,9 @@ public class insertHeap {
                 int temp = ans.get(x);
                 ans.set(x, ans.get(par));
                 ans.set(par, temp);
+
+                x = par;
+                par = x-1/2;
             }
         }
 
