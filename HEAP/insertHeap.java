@@ -16,5 +16,9 @@ public class insertHeap {
                 ans.set(par, temp);
             }
         }
+
+        public int peek(ArrayList<Integer> arr){
+            return arr.get(0);
+        }
     }
 }
