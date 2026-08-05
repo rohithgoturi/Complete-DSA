@@ -55,5 +55,9 @@ public class insertHeap {
 
             return data;
         }
+
+        public boolean isEmpty(){
+            return ans.size() == 0;
+        }
     }
 }
