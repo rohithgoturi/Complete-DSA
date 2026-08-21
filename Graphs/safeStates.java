@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class dijkstra {
+public class safeStates {
     public static ArrayList<Integer> safeNodes(int V, int[][] edges) {
 
         List<List<Integer>> list = new ArrayList<>();
